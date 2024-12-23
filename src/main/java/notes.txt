@@ -1,0 +1,17 @@
+A Program to execute custom runners in desired order by @Order annotation:
+Programs:
+* SpringBootRunnerApplication5Application.java
+* CustomApplicationRunner1.java
+* CustomApplicationRunner2.java
+* CustomCommandLineRunner1.java
+* CustomCommandLineRunner2.java
+Notes:
+* The @Order is used to defined the order to execute the components.
+* This annotation is accept one attribute is value, it is int type.
+* The value attribute is optional and its default value is Ordered interface LOWEST_PRECEDENCE.
+Output:
+From run method in CustomCommandLineRunner2 class.
+From run method in CustomCommandLineRunner1 class.
+From run method in CustomApplicationRunner2 class.
+From run method in CustomApplicationRunner1 class.
+From main method in SpringBootRunnerApplication5Application class.
